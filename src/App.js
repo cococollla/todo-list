@@ -29,6 +29,14 @@ function App() {
     ]);
   };
 
+  const handleEdit = (id, editedText) => {
+    setTodos([
+      ...todos.map((task) =>
+        task.id === id ? { ...task, task: editedText } : { ...task }
+      )
+    ]);
+  };
+
   return (
     <div className="App">
       <header>
@@ -42,11 +50,12 @@ function App() {
             key={todo.id}
             handleSwitch={handleSwitch}
             handleDelete={handleDelete}
+            handleEdit={handleEdit}
           />
         );
       })}
     </div>
   );
-}
+};
 
 export default App;

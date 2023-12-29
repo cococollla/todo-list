@@ -6,10 +6,10 @@ const TodoForm = ({ handleCreate }) => {
   const handleChange = (e) => {
     setUserInput(e.currentTarget.value);
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-  handleCreate(userInput);
+    handleCreate(userInput);
     setUserInput("");
   };
 

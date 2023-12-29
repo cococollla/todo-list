@@ -19,6 +19,9 @@
 }
 
 .App .item-todo .item-text {
+  max-width: 50%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
   display: inline-block;
   cursor: pointer;
   color: #000000
@@ -47,9 +50,9 @@
   background-color: #2980b9;
 }
 
-.item-delete {
+.item-button {
   cursor: pointer;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
