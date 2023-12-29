@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App .item-todo {
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App .item-todo .item-text {
+  display: inline-block;
+  cursor: pointer;
+  color: #000000
+}
+
+.App input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #3498db;
+  outline: none;
+  background: transparent;
+}
+
+.App .item-create {
+  padding: 16px 7px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: #3498db;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.App button:hover {
+  background-color: #2980b9;
+}
+
+.item-delete {
+  cursor: pointer;
+  margin-bottom: 0 auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.strike {
+  text-decoration: line-through;
+}
