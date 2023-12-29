@@ -13,19 +13,12 @@ const TodoForm = ({ handleCreate }) => {
     setUserInput("");
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      handleSubmit(e);
-    }
-  };
-
   return (
     <form onSubmit={handleSubmit}>
       <input
         value={userInput}
         type="text"
         onChange={handleChange}
-        onKeyDown={handleKeyPress}
         placeholder="Todo..."
       />
       <button className="item-create">Create</button>
