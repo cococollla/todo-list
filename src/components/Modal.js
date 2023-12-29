@@ -14,7 +14,7 @@ const Modal = ({ isOpen, closeModal, initialText, handleSave }) => {
     };
 
     return (
-        <div className={`modal ${isOpen ? "open" : ""}`}>
+        <div className={isOpen ? "modal open" : "modal"}>
             <div className="modal-content">
                 <div>
                     <textarea type="text" value={editedText} onChange={handleChange} />

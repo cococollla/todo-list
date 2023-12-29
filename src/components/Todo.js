@@ -4,10 +4,6 @@ import Modal from "./Modal";
 const Todo = ({ todo, handleSwitch, handleDelete, handleEdit }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -25,7 +21,7 @@ const Todo = ({ todo, handleSwitch, handleDelete, handleEdit }) => {
         {todo.task}
       </div>
       <div>
-        <button className="item-button" onClick={openModal}>
+        <button className="item-button" onClick={() => setIsModalOpen(true)}>
           Edit
         </button>
         <button className="item-button" onClick={() => handleDelete(todo.id)}>
